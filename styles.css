@@ -271,6 +271,11 @@ li + li {
   max-width: 780px;
 }
 
+/* Keep retired overview markup hidden if an older page is served from cache. */
+.quick-facts {
+  display: none;
+}
+
 .hero-copy h1 {
   max-width: 13ch;
   font-size: clamp(3rem, 6.8vw, 5.8rem);
@@ -411,41 +416,6 @@ li + li {
   margin: 1.25rem 0 0 3.8rem;
   color: var(--muted);
   font-size: 0.92rem;
-}
-
-.quick-facts {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-bottom: clamp(6rem, 12vw, 10rem);
-  border-block: 1px solid var(--border);
-}
-
-.quick-facts div {
-  display: flex;
-  min-height: 112px;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  padding: 1.2rem;
-  text-align: center;
-}
-
-.quick-facts div + div {
-  border-left: 1px solid var(--border);
-}
-
-.quick-facts strong {
-  color: var(--accent-strong);
-  font-size: 2.2rem;
-  line-height: 1;
-}
-
-.quick-facts span {
-  max-width: 13ch;
-  color: var(--muted);
-  font-size: 0.86rem;
-  line-height: 1.25;
-  text-align: left;
 }
 
 .section-block {
@@ -763,25 +733,10 @@ li + li {
     width: 100%;
   }
 
-  .quick-facts,
   .workflow-grid,
   .legal-grid,
   .privacy-panel {
     grid-template-columns: 1fr;
-  }
-
-  .quick-facts div {
-    min-height: 86px;
-    justify-content: flex-start;
-  }
-
-  .quick-facts div + div {
-    border-top: 1px solid var(--border);
-    border-left: 0;
-  }
-
-  .quick-facts span {
-    max-width: none;
   }
 
   .feature-card,
