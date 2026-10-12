@@ -3,61 +3,80 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Privacy and support for the iOS app LiftingArc.">
+    <meta name="description" content="LiftingArc is a local iOS app for workout tracking, training plans, statistics, and video analysis on iPhone and iPad.">
     <meta name="referrer" content="no-referrer">
     <link rel="alternate" hreflang="de" href="https://jamay5555.github.io/liftingarc/">
     <link rel="alternate" hreflang="en" href="https://jamay5555.github.io/liftingarc/en/">
-    <title>LiftingArc – Privacy &amp; Support</title>
+    <title>LiftingArc – Plan, track, and analyze your training</title>
     <link rel="icon" href="../app-icon.png" type="image/png">
     <link rel="stylesheet" href="../styles.css">
   </head>
-  <body>
+  <body class="landing">
     <a class="skip-link" href="#content">Skip to content</a>
     <header class="site-header">
-      <a class="brand" href="./" aria-label="LiftingArc home">
-        <img src="../app-icon.png" alt="" width="38" height="38">
-        <span>LiftingArc</span>
-      </a>
+      <a class="brand" href="./" aria-label="LiftingArc home"><img src="../app-icon.png" alt="" width="38" height="38"><span>LiftingArc</span></a>
       <div class="header-actions">
-        <nav class="language-switch" aria-label="Select language">
-          <a href="../" lang="de">Deutsch</a>
-          <span aria-hidden="true">|</span>
-          <a href="./" aria-current="page">English</a>
-        </nav>
-        <nav class="site-nav" aria-label="Main navigation">
-          <a href="../privacy/en/">Privacy</a>
-          <a href="../support/en/">Support</a>
-        </nav>
+        <nav class="language-switch" aria-label="Select language"><a href="../" lang="de">Deutsch</a><span aria-hidden="true">|</span><a href="./" aria-current="page">English</a></nav>
+        <nav class="site-nav" aria-label="Main navigation"><a href="#features">Features</a><a href="../privacy/en/">Privacy</a><a href="../support/en/">Support</a></nav>
       </div>
     </header>
 
     <main id="content">
-      <p class="eyebrow">LiftingArc for iPhone &amp; iPad</p>
-      <h1>Train. Analyze. Keep your data.</h1>
-      <p class="lead">
-        Here you can find the privacy policy and direct contact options for questions or technical issues with LiftingArc.
-      </p>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">A native training hub for iPhone &amp; iPad</p>
+          <h1 id="hero-title">Your training. From the plan to the final rep.</h1>
+          <p class="lead">LiftingArc brings workout tracking, multi-week planning, meaningful statistics, and video analysis together in one focused, local app.</p>
+          <div class="hero-tags" aria-label="Key characteristics"><span>Local-first</span><span>No subscription</span><span>Strength · Cardio · Mobility</span></div>
+          <div class="hero-actions"><a class="button button-primary" href="#features">Explore features</a><a class="button button-secondary" href="../privacy/en/">View privacy</a></div>
+        </div>
+        <div class="app-visual" role="img" aria-label="Stylized LiftingArc workout screen showing bench press, set values, and a personal record">
+          <div class="visual-glow" aria-hidden="true"></div>
+          <div class="phone-frame"><div class="phone-screen">
+            <div class="mock-status"><span>9:41</span><span>● ●</span></div>
+            <div class="mock-toolbar"><span class="mock-back">Workouts</span><strong>Push A</strong><span class="mock-done">Finish</span></div>
+            <div class="mock-summary"><div><span>Duration</span><strong>48:12</strong></div><div><span>Sets</span><strong>14 / 18</strong></div><div><span>Volume</span><strong>6,840 kg</strong></div></div>
+            <div class="mock-exercise">
+              <div class="mock-exercise-head"><div><strong>Bench Press</strong><span>Last time 90 kg × 5</span></div><span class="mock-pr">PR</span></div>
+              <div class="mock-set mock-set-head"><span>Set</span><span>kg</span><span>Reps</span><span></span></div>
+              <div class="mock-set"><span>1</span><strong>80</strong><strong>8</strong><i>✓</i></div><div class="mock-set"><span>2</span><strong>87.5</strong><strong>6</strong><i>✓</i></div><div class="mock-set active"><span>3</span><strong>92.5</strong><strong>5</strong><i>✓</i></div>
+            </div>
+            <div class="mock-chart" aria-hidden="true"><span style="--bar: 38%"></span><span style="--bar: 52%"></span><span style="--bar: 48%"></span><span style="--bar: 70%"></span><span style="--bar: 84%"></span><span style="--bar: 100%"></span></div>
+          </div></div>
+          <div class="floating-card floating-card-top"><span>Personal record</span><strong>92.5 kg × 5</strong></div><div class="floating-card floating-card-bottom"><span>Rest timer</span><strong>01:24</strong></div>
+        </div>
+      </section>
 
-      <div class="action-grid">
-        <a class="action-card" href="../privacy/en/">
-          <span class="card-title">Privacy</span>
-          <span class="card-copy">How the app processes data locally and when external services are involved.</span>
-          <span class="card-arrow" aria-hidden="true">Open →</span>
-        </a>
-        <a class="action-card" href="../support/en/">
-          <span class="card-title">Support</span>
-          <span class="card-copy">Help, feedback, and contact for LiftingArc.</span>
-          <span class="card-arrow" aria-hidden="true">Open →</span>
-        </a>
-      </div>
+      <section class="quick-facts" aria-label="LiftingArc overview"><div><strong>4</strong><span>focused main areas</span></div><div><strong>11</strong><span>training and analysis tools</span></div><div><strong>1</strong><span>connected training flow</span></div></section>
+
+      <section id="features" class="section-block" aria-labelledby="features-title">
+        <div class="section-heading"><p class="eyebrow">Everything in one place</p><h2 id="features-title">More than a digital training log.</h2><p>From a spontaneous session to a structured training block, logging, history, and analysis stay connected.</p></div>
+        <div class="feature-grid">
+          <article class="feature-card feature-card-large"><span class="feature-index" aria-hidden="true">01</span><h3>Workouts built for the gym</h3><p>Log weight, reps, duration, RPE, and notes quickly. Previous set values, PR cues, and a rest timer keep the essentials close at hand.</p><ul class="check-list"><li>Strength, cardio, and mobility workouts</li><li>Warm-ups, back-off sets, and targets</li><li>Set videos attached to your training</li></ul></article>
+          <article class="feature-card"><span class="feature-index" aria-hidden="true">02</span><h3>Templates &amp; blocks</h3><p>Create repeatable templates, structure multi-week blocks, and carry planned values into an independent workout.</p></article>
+          <article class="feature-card"><span class="feature-index" aria-hidden="true">03</span><h3>History &amp; PRs</h3><p>Compare workout history, exercise trends, personal records, and time ranges without switching between apps.</p></article>
+          <article class="feature-card feature-card-wide"><span class="feature-index" aria-hidden="true">04</span><div><h3>Tools for informed decisions</h3><p>1RM and DOTS calculators, powerlifting and all-time statistics, bodyweight trends, Goal Engine, cardio and Apple Health insights, plus local competition profiles from OpenPowerlifting.</p></div><div class="mini-dashboard" aria-hidden="true"><div class="metric-pill"><span>Total</span><strong>562.5 kg</strong></div><div class="metric-pill"><span>DOTS</span><strong>401.8</strong></div><div class="trend-line"><i></i><i></i><i></i><i></i><i></i><i></i></div></div></article>
+          <article class="feature-card feature-card-large video-card"><span class="feature-index" aria-hidden="true">05</span><h3>Video analysis beyond guesswork</h3><p>Review set videos and independent gallery imports in one place. Mark rep timings manually or analyze, verify, and correct bar movement using placed anchors.</p><div class="rep-visual" aria-hidden="true"><div class="bar-path"><span></span><span></span><span></span><span></span></div><div class="rep-stats"><span><small>Speed</small><strong>0.72 m/s</strong></span><span><small>Reps</small><strong>5</strong></span><span><small>ROM</small><strong>48 cm</strong></span></div></div></article>
+          <article class="feature-card privacy-feature"><span class="feature-index" aria-hidden="true">06</span><h3>Your data stays yours</h3><p>Training data is stored locally on your device. You control exports and restores; no account, premium tier, or subscription is currently required.</p><a href="../privacy/en/">Privacy in detail →</a></article>
+        </div>
+      </section>
+
+      <section class="workflow section-block" aria-labelledby="workflow-title">
+        <div class="section-heading"><p class="eyebrow">A focused flow</p><h2 id="workflow-title">Plan. Train. Understand.</h2></div>
+        <ol class="workflow-grid"><li><span>01</span><h3>Prepare</h3><p>Start a spontaneous workout or bring targets across from a template or training block.</p></li><li><span>02</span><h3>Perform</h3><p>Log sets, see previous performance, manage rests, and attach videos as you train.</p></li><li><span>03</span><h3>Review</h3><p>Explore progress, workload, personal records, and movement quality afterwards.</p></li></ol>
+      </section>
+
+      <section class="privacy-panel" aria-labelledby="privacy-title">
+        <div><p class="eyebrow">Local-first</p><h2 id="privacy-title">Training is personal. So is data storage.</h2></div>
+        <div class="privacy-copy"><p>Workouts, exercises, templates, videos, and confirmed analyses are stored locally on your device. LiftingArc does not create automatic cloud backups or show advertising.</p><ul class="check-list compact"><li>Manual export and restore</li><li>No premium gate and no subscription</li><li>External requests only for features you intentionally start</li></ul></div>
+      </section>
+
+      <section class="closing-section" aria-labelledby="closing-title">
+        <p class="eyebrow">Questions?</p><h2 id="closing-title">Transparency is part of the product.</h2><p>Learn how data is handled or get in touch directly if something is unclear.</p>
+        <div class="legal-grid"><a class="action-card" href="../privacy/en/"><span class="card-title">Privacy</span><span class="card-copy">How data is processed locally and when external services are involved.</span><span class="card-arrow" aria-hidden="true">Open →</span></a><a class="action-card" href="../support/en/"><span class="card-title">Support</span><span class="card-copy">Help, feedback, and direct contact for LiftingArc.</span><span class="card-arrow" aria-hidden="true">Contact →</span></a></div>
+      </section>
     </main>
 
-    <footer class="site-footer">
-      <p>© 2026 Jannis Mayland</p>
-      <nav aria-label="Legal links">
-        <a href="../privacy/en/">Privacy</a>
-        <a href="../support/en/">Support</a>
-      </nav>
-    </footer>
+    <footer class="site-footer"><p>© 2026 Jannis Mayland</p><nav aria-label="Legal links"><a href="../privacy/en/">Privacy</a><a href="../support/en/">Support</a></nav></footer>
   </body>
 </html>
