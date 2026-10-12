@@ -257,6 +257,20 @@ li + li {
   padding-block: clamp(3rem, 8vw, 6.5rem);
 }
 
+/* Prevent a cached older landing page from exposing its retired mockup unstyled. */
+.app-visual {
+  display: none;
+}
+
+.hero:has(.app-visual) {
+  grid-template-columns: 1fr;
+  min-height: 0;
+}
+
+.hero:has(.app-visual) .hero-copy {
+  max-width: 780px;
+}
+
 .hero-copy h1 {
   max-width: 13ch;
   font-size: clamp(3rem, 6.8vw, 5.8rem);
