@@ -657,7 +657,7 @@ li + li {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 0.7rem 1.2rem;
-  padding-block: 1.5rem calc(6rem + env(safe-area-inset-bottom));
+  padding-block: 1.5rem calc(7rem + env(safe-area-inset-bottom));
   border-top: 1px solid var(--border);
   color: var(--muted);
   font-size: 0.88rem;
@@ -678,15 +678,18 @@ li + li {
   bottom: max(1rem, env(safe-area-inset-bottom));
   z-index: 20;
   display: grid;
-  min-width: 168px;
-  min-height: 58px;
-  align-content: center;
-  padding: 0.62rem 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.75);
-  border-radius: 15px;
+  min-width: 248px;
+  min-height: 72px;
+  grid-template-columns: 40px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.68rem 0.85rem;
+  border: 2px solid rgba(255, 255, 255, 0.88);
+  border-radius: 18px;
   background: rgba(248, 250, 253, 0.96);
-  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.42);
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.48), 0 0 0 1px rgba(90, 167, 255, 0.18);
   color: #080b10;
+  cursor: pointer;
   line-height: 1.05;
   text-decoration: none;
   backdrop-filter: blur(14px);
@@ -698,20 +701,39 @@ li + li {
   transform: translateY(-1px);
 }
 
-.app-store-cta span,
-.app-store-cta strong {
+.app-store-cta:active {
+  transform: translateY(1px);
+}
+
+.app-store-cta img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.app-store-cta-copy,
+.app-store-cta-copy span,
+.app-store-cta-copy strong {
   display: block;
 }
 
-.app-store-cta span {
+.app-store-cta-copy span {
   margin-bottom: 0.18rem;
   font-size: 0.7rem;
   font-weight: 650;
 }
 
-.app-store-cta strong {
-  font-size: 1.08rem;
+.app-store-cta-copy strong {
+  font-size: 1.05rem;
   letter-spacing: -0.02em;
+}
+
+.app-store-cta-arrow {
+  color: #315f91;
+  font-size: 1.9rem;
+  font-weight: 450;
+  line-height: 1;
 }
 
 @media (max-width: 900px) {
@@ -779,15 +801,23 @@ li + li {
 
   .hero {
     gap: 1.5rem;
-    padding-top: 3rem;
+    padding-top: 1.5rem;
   }
 
   .hero-copy h1 {
     font-size: clamp(2.65rem, 14vw, 4rem);
   }
 
+  .hero-tags {
+    display: none;
+  }
+
   .hero-actions .button {
     width: 100%;
+  }
+
+  .hero-actions .button-secondary {
+    display: none;
   }
 
   .concept-visual {
@@ -835,7 +865,10 @@ li + li {
   .app-store-cta {
     right: max(1rem, env(safe-area-inset-right));
     bottom: max(0.75rem, env(safe-area-inset-bottom));
-    min-height: 56px;
+    min-width: 226px;
+    min-height: 68px;
+    gap: 0.65rem;
+    padding: 0.58rem 0.72rem;
   }
 }
 
